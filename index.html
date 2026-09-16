@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FKM Solutions - Turning Ideas into Intelligent Solutions. We design and build resilient digital platforms, from custom software architectures and modern web/mobile apps to specialized aviation dispatch and hospitality guest systems.">
+  <meta name="keywords" content="FKM Solutions, Enterprise Software, Cloud Engineering, Aviation Dispatch Systems, Hospitality Guest Systems, Custom Software Architecture, Mobile Apps">
+  <meta name="author" content="FKM Solutions">
+  <title>FKM Solutions | Turning Ideas into Intelligent Solutions</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans for clean geometric sans, Newsreader for editorial italic serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500;1,6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- FIXED BLUR NAVBAR -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="#hero" class="brand-link" aria-label="FKM Solutions Home">
+        <div class="brand-logo-badge">FKM</div>
+        <div class="brand-text-group">
+          <span class="brand-title">FKM Solutions</span>
+          <span class="brand-tagline">Turning Ideas into Intelligent Solutions</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#services" class="nav-item">Services</a></li>
+          <li><a href="#aviation-hospitality" class="nav-item">Aviation &amp; Hospitality</a></li>
+          <li><a href="#case-studies" class="nav-item">Case Studies</a></li>
+          <li><a href="#about" class="nav-item">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <button class="btn btn-contact" id="navContactBtn" aria-label="Open Contact Modal">
+          <span>Contact</span>
+          <svg class="icon-arrow-up-right" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="mobile-drawer-content">
+      <div class="drawer-header">
+        <div class="brand-link">
+          <div class="brand-logo-badge">FKM</div>
+          <div class="brand-text-group">
+            <span class="brand-title">FKM Solutions</span>
+            <span class="brand-tagline">Intelligent Solutions</span>
+          </div>
+        </div>
+        <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close navigation menu">&times;</button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="#services" class="drawer-link">Services</a></li>
+        <li><a href="#aviation-hospitality" class="drawer-link">Aviation &amp; Hospitality</a></li>
+        <li><a href="#case-studies" class="drawer-link">Case Studies</a></li>
+        <li><a href="#estimator" class="drawer-link">Project Estimator</a></li>
+        <li><a href="#about" class="drawer-link">About</a></li>
+        <li><a href="#contact" class="drawer-link">Contact</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <button class="btn btn-contact drawer-cta-btn" id="drawerContactBtn">
+          <span>Contact Us</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION (MATCHING UPLOADED IMAGE) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <!-- Status Pill Badge -->
+        <div class="hero-badge-wrap">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span class="status-text">Enterprise Software &amp; Cloud Engineering</span>
+          </div>
+        </div>
+
+        <!-- Hero Main Heading -->
+        <h1 class="hero-title">
+          Turning Ideas into <em class="serif-italic">Intelligent</em><br>
+          <em class="serif-italic">Solutions.</em>
+        </h1>
+
+        <!-- Hero Subtitle Paragraph -->
+        <p class="hero-description">
+          We design and build resilient digital platforms, from custom software architectures and modern web/mobile apps to specialized aviation dispatch and hospitality guest systems.
+        </p>
+
+        <!-- Hero Action Buttons -->
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" id="heroStartBtn">
+            <span>Start a Project</span>
+            <svg class="icon-arrow-right" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#services" class="btn btn-secondary">Explore Services</a>
+        </div>
+
+        <!-- Thin Horizontal Divider -->
+        <div class="hero-divider-wrapper">
+          <hr class="hero-divider">
+        </div>
+
+        <!-- 4 Metric / SLA Stat Cards -->
+        <div class="stats-grid" id="statsGrid">
+          <div class="stat-card">
+            <div class="stat-value" data-target="99.99" data-suffix="%">99.99%</div>
+            <div class="stat-label">Mission-Critical SLA Reliability</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" data-target="35" data-suffix="+">35+</div>
+            <div class="stat-label">Enterprise Systems Delivered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" data-target="1.2" data-suffix="M+">1.2M+</div>
+            <div class="stat-label">Daily End-User Interactions</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" data-prefix="< " data-target="24" data-suffix="h">&lt; 24h</div>
+            <div class="stat-label">Technical Response Time</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGINEERING CAPABILITIES / SERVICES SECTION (MATCHING UPLOADED IMAGE) -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-caps">ENGINEERING CAPABILITIES</div>
+          <h2 class="section-title">Tailored software for mission-critical<br>operations.</h2>
+          <p class="section-description">
+            Every system we engineer is built directly around your operational workflows, compliance requirements, and integration architecture.
+          </p>
+        </div>
+
+        <div class="services-dual-grid">
+          <!-- Card 1: Aviation Enterprise Systems -->
+          <div class="domain-spec-card">
+            <div class="spec-card-top">
+              <div class="spec-icon-box aviation-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path>
+                </svg>
+              </div>
+              <span class="specialized-pill">SPECIALIZED DOMAIN</span>
+            </div>
+
+            <h3 class="spec-card-title">Aviation Enterprise Systems</h3>
+            <p class="spec-card-description">
+              FAA/ICAO-compliant flight operations, real-time fleet dispatch, crew duty tracking (Part 117/121), and offline-capable Electronic Flight Bag (EFB) apps.
+            </p>
+
+            <ul class="spec-feature-list">
+              <li class="spec-feature-item">
+                <svg class="spec-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="9 12 12 15 16 10"></polyline>
+                </svg>
+                <span>Automated weight &amp; balance envelope calculations</span>
+              </li>
+              <li class="spec-feature-item">
+                <svg class="spec-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="9 12 12 15 16 10"></polyline>
+                </svg>
+                <span>Crew scheduling &amp; pilot rest limit compliance</span>
+              </li>
+              <li class="spec-feature-item">
+                <svg class="spec-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="9 12 12 15 16 10"></polyline>
+                </svg>
+                <span>Aircraft telemetry &amp; predictive maintenance ledgers</span>
+              </li>
+              <li class="spec-feature-item">
+                <svg class="spec-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="9 12 12 15 16 10"></polyline>
+                </svg>
+                <span>Offline flight deck synchronization</span>
+              </li>
+            </ul>
+
+            <div class="spec-card-footer">
+              <div class="spec-tech-pills">
+                <span>Node.js</span>
+                <span>TypeScript</span>
+                <span>PostgreSQL</span>
+              </div>
+              <button type="button" class="spec-inquire-btn" onclick="openContactModal('Aviation Enterprise Systems')">
+                <span>Inquire</span>
+                <span class="chevron-char">&rsaquo;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Hospitality & Guest Experience -->
+          <div class="domain-spec-card">
+            <div class="spec-card-top">
+              <div class="spec-icon-box hospitality-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                  <path d="M9 22v-4h6v4"></path>
+                  <path d="M8 6h.01"></path>
+                  <path d="M16 6h.01"></path>
+                  <path d="M12 6h.01"></path>
+                  <path d="M12 10h.01"></path>
+                  <path d="M12 14h.01"></path>
+                  <path d="M16 10h.01"></path>
+                  <path d="M16 14h.01"></path>
+                  <path d="M8 10h.01"></path>
+                  <path d="M8 14h.01"></path>
+                </svg>
+              </div>
+              <span class="specialized-pill">SPECIALIZED DOMAIN</span>
+            </div>
+
+            <h3 class="spec-card-title">Hospitality &amp; Guest Experience</h3>
+            <p class="spec-card-description">
+              Frictionless mobile guest hubs with keyless room locks, bi-directional PMS integrations (Opera, Cloudbeds), and dynamic yield rate optimization.
+            </p>
+
+            <ul class="spec-feature-list">
+              <li class="spec-feature-item">
+                <svg class="spec-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="9 12 12 15 16 10"></polyline>
+                </svg>
+                <span>Zero-app-download mobile check-in &amp; digital keycards</span>
+              </li>
+              <li class="spec-feature-item">
+                <svg class="spec-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="9 12 12 15 16 10"></polyline>
+                </svg>
+                <span>Direct PMS &amp; POS billing synchronization</span>
+              </li>
+              <li class="spec-feature-item">
+                <svg class="spec-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="9 12 12 15 16 10"></polyline>
+                </svg>
+                <span>Automated housekeeping &amp; maintenance workflows</span>
+              </li>
+              <li class="spec-feature-item">
+                <svg class="spec-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="9 12 12 15 16 10"></polyline>
+                </svg>
+                <span>In-stay ancillary upselling and concierge portal</span>
+              </li>
+            </ul>
+
+            <div class="spec-card-footer">
+              <div class="spec-tech-pills">
+                <span>React</span>
+                <span>REST APIs</span>
+                <span>Cloud SQL</span>
+              </div>
+              <button type="button" class="spec-inquire-btn" onclick="openContactModal('Hospitality & Guest Experience')">
+                <span>Inquire</span>
+                <span class="chevron-char">&rsaquo;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE INDUSTRY FOCUS: AVIATION & HOSPITALITY SUITES (MATCHING UPLOADED IMAGE) -->
+    <section class="section domain-section" id="aviation-hospitality">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="eyebrow-caps">PROVEN INDUSTRY EXPERIENCE</div>
+          <h2 class="section-title">Aviation &amp; Hospitality Suites</h2>
+          <p class="section-description centered-desc">
+            Decades of specialized engineering experience. We build battle-tested, custom platforms deployed across commercial flight decks, operational dispatch hubs, and world-class luxury resort properties.
+          </p>
+        </div>
+
+        <!-- Interactive Centered Pill Tab Switcher -->
+        <div class="suites-tab-wrapper">
+          <div class="suites-tabs" role="tablist">
+            <button class="suites-tab active" id="tabAviation" role="tab" aria-selected="true" aria-controls="aviationPanel" data-target="aviation">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path>
+              </svg>
+              <span>Aviation Operations</span>
+            </button>
+            <button class="suites-tab" id="tabHospitality" role="tab" aria-selected="false" aria-controls="hospitalityPanel" data-target="hospitality">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <path d="M9 22v-4h6v4"></path>
+                <path d="M8 6h.01"></path>
+                <path d="M16 6h.01"></path>
+                <path d="M12 6h.01"></path>
+              </svg>
+              <span>Hospitality Systems</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Large White Main Container -->
+        <div class="suites-main-card">
+          <!-- Aviation Operations Suite View -->
+          <div class="suite-panel active" id="aviationPanel" role="tabpanel" aria-labelledby="tabAviation">
+            <h3 class="suite-heading">Aviation Operations Suite</h3>
+            <p class="suite-subheading">
+              Built on deep industry experience with commercial airlines, charter operators, and air cargo carriers. We engineer systems with zero latency, rigorous FAA/EASA regulatory compliance, and cockpit-tested offline resilience.
+            </p>
+
+            <div class="suite-cards-grid">
+              <div class="suite-subcard">
+                <h4 class="suite-subcard-title">Flight Dispatch &amp; Planning</h4>
+                <p class="suite-subcard-text">
+                  Proven experience delivering real-time runway analysis, automated weather integration, and precise fuel burn calculations under strict flight release SLAs.
+                </p>
+              </div>
+
+              <div class="suite-subcard">
+                <h4 class="suite-subcard-title">Crew Duty &amp; Rest Auditing</h4>
+                <p class="suite-subcard-text">
+                  Battle-tested rule engines that automate FAA Part 117/121 and EASA duty-time auditing, preventing rostering violations and fatigue non-compliance.
+                </p>
+              </div>
+
+              <div class="suite-subcard">
+                <h4 class="suite-subcard-title">Maintenance &amp; Tech Log</h4>
+                <p class="suite-subcard-text">
+                  Extensive expertise integrating airframe cycle tracking, electronic tech logs, and deferred defect ledgers with certified MRO enterprise systems.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hospitality Systems Suite View -->
+          <div class="suite-panel" id="hospitalityPanel" role="tabpanel" aria-labelledby="tabHospitality" style="display: none;">
+            <h3 class="suite-heading">Hospitality Systems Suite</h3>
+            <p class="suite-subheading">
+              Backed by years of hands-on experience in luxury hospitality and resort operations. We design and deploy high-volume guest hubs, contactless room locks, and frictionless billing engines that scale across multiple international properties.
+            </p>
+
+            <div class="suite-cards-grid">
+              <div class="suite-subcard">
+                <h4 class="suite-subcard-title">Mobile Check-in &amp; Digital Keys</h4>
+                <p class="suite-subcard-text">
+                  Demonstrated track record deploying zero-app web check-in and encrypted BLE/NFC digital keycard generation trusted by premier boutique and luxury brands.
+                </p>
+              </div>
+
+              <div class="suite-subcard">
+                <h4 class="suite-subcard-title">PMS &amp; POS Bilateral Sync</h4>
+                <p class="suite-subcard-text">
+                  Deep integration experience establishing robust two-way synchronization with Opera, Cloudbeds, Maestro, and enterprise restaurant POS platforms.
+                </p>
+              </div>
+
+              <div class="suite-subcard">
+                <h4 class="suite-subcard-title">Guest Concierge &amp; Folios</h4>
+                <p class="suite-subcard-text">
+                  Proven systems that streamline in-stay guest service requests, automated dining reservations, real-time folio auditing, and seamless mobile check-out.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES SECTION -->
+    <section class="section case-studies-section" id="case-studies">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Case Studies</div>
+          <h2 class="section-title">Tested Under Real-World Scale</h2>
+          <p class="section-description">
+            Explore how FKM Solutions engineers high-concurrency systems, replaces legacy bottlenecks, and guarantees mission-critical reliability.
+          </p>
+        </div>
+
+        <div class="case-studies-grid">
+          <!-- Case Study 1 -->
+          <article class="case-card">
+            <div class="case-tag">Aviation Operations</div>
+            <h3 class="case-title">SkyLink Regional Airlines: Modernizing Flight Dispatch</h3>
+            <p class="case-summary">
+              Re-engineered a legacy on-premise flight dispatch calculator into an event-driven, cloud-native telemetry platform with automated FAA compliance checking.
+            </p>
+            <div class="case-results">
+              <div class="case-stat">
+                <span class="stat-highlight">82%</span>
+                <span class="stat-caption">Faster Calculation Time</span>
+              </div>
+              <div class="case-stat">
+                <span class="stat-highlight">99.999%</span>
+                <span class="stat-caption">Zero Dispatch Downtime</span>
+              </div>
+            </div>
+            <div class="case-tech-stack">
+              <span>Go</span>
+              <span>Kubernetes</span>
+              <span>Kafka</span>
+              <span>PostgreSQL</span>
+            </div>
+          </article>
+
+          <!-- Case Study 2 -->
+          <article class="case-card">
+            <div class="case-tag">Hospitality Platform</div>
+            <h3 class="case-title">Aura Grand Luxury Resorts: Unified Guest Mobile Portal</h3>
+            <p class="case-summary">
+              Engineered a unified digital key, dining reservation, and folio management mobile app deployed across 14 international luxury properties.
+            </p>
+            <div class="case-results">
+              <div class="case-stat">
+                <span class="stat-highlight">34%</span>
+                <span class="stat-caption">Increase in Direct Bookings</span>
+              </div>
+              <div class="case-stat">
+                <span class="stat-highlight">4.8★</span>
+                <span class="stat-caption">App Store Rating</span>
+              </div>
+            </div>
+            <div class="case-tech-stack">
+              <span>React Native</span>
+              <span>Node.js</span>
+              <span>AWS Serverless</span>
+              <span>Opera PMS</span>
+            </div>
+          </article>
+
+          <!-- Case Study 3 -->
+          <article class="case-card">
+            <div class="case-tag">Enterprise Logistics</div>
+            <h3 class="case-title">TransGlobal Fleet: Sub-Second Telemetry Processing</h3>
+            <p class="case-summary">
+              Constructed a real-time IoT vehicle tracking pipeline processing 45,000 telemetry pings per second with automated predictive route optimization.
+            </p>
+            <div class="case-results">
+              <div class="case-stat">
+                <span class="stat-highlight">&lt; 150ms</span>
+                <span class="stat-caption">End-to-End Latency</span>
+              </div>
+              <div class="case-stat">
+                <span class="stat-highlight">18%</span>
+                <span class="stat-caption">Fuel Cost Reduction</span>
+              </div>
+            </div>
+            <div class="case-tech-stack">
+              <span>Rust</span>
+              <span>Apache Flink</span>
+              <span>ClickHouse</span>
+              <span>Docker</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE PROJECT ESTIMATOR -->
+    <section class="section estimator-section" id="estimator">
+      <div class="container">
+        <div class="estimator-card">
+          <div class="estimator-header">
+            <div class="section-badge">Solution Configurator</div>
+            <h2 class="estimator-title">Estimate Your Project Scope &amp; Timeline</h2>
+            <p class="estimator-subtitle">
+              Select your domain and requirements below to get an instant architectural assessment and timeline estimate.
+            </p>
+          </div>
+
+          <div class="estimator-form">
+            <!-- Step 1: Industry -->
+            <div class="estimator-group">
+              <label class="estimator-label">1. Select Target Industry</label>
+              <div class="estimator-options" id="industryOptions">
+                <button type="button" class="option-btn active" data-industry="enterprise" data-base-weeks="8">
+                  <span class="option-title">Enterprise Software</span>
+                  <span class="option-desc">Cloud architecture, APIs &amp; web platforms</span>
+                </button>
+                <button type="button" class="option-btn" data-industry="aviation" data-base-weeks="12">
+                  <span class="option-title">Aviation Dispatch</span>
+                  <span class="option-desc">Flight ops, telemetry &amp; compliance</span>
+                </button>
+                <button type="button" class="option-btn" data-industry="hospitality" data-base-weeks="10">
+                  <span class="option-title">Hospitality Systems</span>
+                  <span class="option-desc">Booking engine, guest key &amp; PMS sync</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Key Modules -->
+            <div class="estimator-group">
+              <label class="estimator-label">2. Select Required Platform Modules</label>
+              <div class="checkbox-grid" id="modulesGrid">
+                <label class="checkbox-card checked">
+                  <input type="checkbox" value="cloud" checked data-add-weeks="2">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-label">Cloud Architecture &amp; CI/CD (99.99% SLA)</span>
+                </label>
+                <label class="checkbox-card checked">
+                  <input type="checkbox" value="mobile" checked data-add-weeks="3">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-label">Native Mobile App (iOS / Android)</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" value="telemetry" data-add-weeks="3">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-label">Real-Time Event Stream &amp; Telemetry</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" value="ai" data-add-weeks="2">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-label">AI Automation &amp; Predictive Models</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Summary Output -->
+            <div class="estimator-summary">
+              <div class="summary-col">
+                <span class="summary-label">Estimated Delivery Velocity</span>
+                <span class="summary-value" id="estimatedWeeks">13 - 16 Weeks</span>
+                <span class="summary-note">Includes Sprint 0 Architecture &amp; Staging QA</span>
+              </div>
+              <div class="summary-col">
+                <span class="summary-label">Recommended Architecture</span>
+                <span class="summary-value" id="estimatedArch">Cloud Microservices + Reactive Mobile</span>
+                <span class="summary-note">Hardened with 99.99% SLA Guarantee</span>
+              </div>
+              <div class="summary-action">
+                <button type="button" class="btn btn-primary" id="estimatorApplyBtn">
+                  <span>Transfer Scope to Contact &rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <div class="section-badge">About FKM Solutions</div>
+            <h2 class="section-title">Engineered with Purpose.<br>Built to Endure.</h2>
+            <p class="about-lead">
+              At FKM Solutions, we turn ambitious concepts into intelligent, resilient platforms that organizations depend on around the clock.
+            </p>
+            <p class="about-paragraph">
+              We bridge the gap between visionary product strategy and deep systems engineering. Whether supporting pilots in high-altitude cockpits or powering transactions for global hospitality brands, we hold our code to the highest standard of durability and security.
+            </p>
+
+            <div class="compliance-badges">
+              <div class="compliance-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>SOC 2 Type II Certified</span>
+              </div>
+              <div class="compliance-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <span>ISO 27001 Ready</span>
+              </div>
+              <div class="compliance-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>99.99% SLA Guarantee</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-num">01</div>
+              <h4 class="pillar-title">Zero-Tolerance for Failure</h4>
+              <p class="pillar-desc">
+                We build with redundant cloud failovers, automated disaster recovery, and comprehensive telemetry so your business never goes dark.
+              </p>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-num">02</div>
+              <h4 class="pillar-title">Domain Native Engineering</h4>
+              <p class="pillar-desc">
+                We don't just write code; our team grasps the operational intricacies of flight dispatch parameters and luxury guest journey dynamics.
+              </p>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-num">03</div>
+              <h4 class="pillar-title">Transparent Delivery</h4>
+              <p class="pillar-desc">
+                Real-time sprint visibility, dedicated engineering leads, and direct technical communication with guaranteed sub-24h response times.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-grid">
+            <!-- Left Contact Info -->
+            <div class="contact-info-col">
+              <div class="section-badge" style="background: rgba(255,255,255,0.15); color: #fff; border-color: rgba(255,255,255,0.2);">Let's Connect</div>
+              <h2 class="contact-heading">Ready to Turn Your Ideas into Intelligent Solutions?</h2>
+              <p class="contact-subtext">
+                Speak directly with our engineering leadership to scope your platform, review technical architectures, and accelerate your timeline.
+              </p>
+
+              <div class="contact-details">
+                <div class="detail-row">
+                  <div class="detail-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div>
+                    <span class="detail-label">Direct Inquiry</span>
+                    <a href="mailto:contact@fkmsolutions.com" class="detail-val">contact@fkmsolutions.com</a>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </div>
+                  <div>
+                    <span class="detail-label">Guaranteed SLA Response</span>
+                    <span class="detail-val">&lt; 24 Hours Worldwide</span>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div>
+                    <span class="detail-label">Global Engineering Hubs</span>
+                    <span class="detail-val">Manila &bull; Singapore &bull; Remote Worldwide</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Contact Form -->
+            <div class="contact-form-col">
+              <form class="project-inquiry-form" id="contactForm">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="e.g. Sarah Jenkins">
+                  </div>
+                  <div class="form-group">
+                    <label for="workEmail">Work Email *</label>
+                    <input type="email" id="workEmail" name="workEmail" required placeholder="sarah@company.com">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="companyName">Organization / Company</label>
+                    <input type="text" id="companyName" name="companyName" placeholder="e.g. SkyLink Aviation Group">
+                  </div>
+                  <div class="form-group">
+                    <label for="projectService">Primary Area of Interest</label>
+                    <select id="projectService" name="projectService">
+                      <option value="Enterprise Cloud & Software">Enterprise Cloud &amp; Custom Software</option>
+                      <option value="Aviation Dispatch & Operations">Aviation Dispatch &amp; Operations</option>
+                      <option value="Hospitality Guest Systems">Hospitality &amp; Guest Systems</option>
+                      <option value="Web & Mobile App Development">Web &amp; Mobile App Development</option>
+                      <option value="AI Automation & High-Throughput APIs">AI Automation &amp; High-Throughput APIs</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectDetails">Project Overview &amp; Requirements *</label>
+                  <textarea id="projectDetails" name="projectDetails" rows="4" required placeholder="Describe your platform goals, timelines, or operational requirements..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-form-submit" id="submitBtn">
+                  <span>Send Project Inquiry</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+
+                <div class="form-feedback" id="formFeedback" style="display: none;"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-link">
+            <div class="brand-logo-badge">FKM</div>
+            <div class="brand-text-group">
+              <span class="brand-title">FKM Solutions</span>
+              <span class="brand-tagline">Turning Ideas into Intelligent Solutions</span>
+            </div>
+          </div>
+          <p class="footer-mission">
+            Designing resilient digital platforms, aviation operations software, and luxury guest systems with uncompromising reliability.
+          </p>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <span class="footer-col-title">Navigation</span>
+            <ul>
+              <li><a href="#hero">Overview</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#aviation-hospitality">Aviation &amp; Hospitality</a></li>
+              <li><a href="#case-studies">Case Studies</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <span class="footer-col-title">Specializations</span>
+            <ul>
+              <li><a href="#aviation-hospitality">Flight Dispatch Systems</a></li>
+              <li><a href="#aviation-hospitality">Hospitality Portals</a></li>
+              <li><a href="#services">Cloud Architecture</a></li>
+              <li><a href="#services">Mobile Applications</a></li>
+              <li><a href="#estimator">Scope Estimator</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <span class="footer-col-title">Security &amp; Trust</span>
+            <ul>
+              <li><span class="trust-badge-mini">99.99% SLA Uptime</span></li>
+              <li><span class="trust-badge-mini">SOC 2 Type II</span></li>
+              <li><span class="trust-badge-mini">FAA / ICAO Compliant</span></li>
+              <li><span class="trust-badge-mini">&lt; 24h Response SLA</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; <span id="currentYear">2026</span> FKM Solutions. All rights reserved. Turning Ideas into Intelligent Solutions.
+        </div>
+        <div class="footer-legal">
+          <a href="#about">Privacy Policy</a>
+          <span class="bullet">&bull;</span>
+          <a href="#about">Terms of Service</a>
+          <span class="bullet">&bull;</span>
+          <a href="#about">Security Practices</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE MODAL DIALOG (TRIGGERED BY "CONTACT ↗") -->
+  <dialog class="modal-dialog" id="contactModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <div class="section-badge" style="margin-bottom: 6px;">Start a Conversation</div>
+          <h3 class="modal-title">Direct Engineering Inquiry</h3>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-intro">
+          Share your requirements below. An FKM Solutions principal architect will respond within 24 hours.
+        </p>
+        <form id="modalForm" class="modal-form">
+          <div class="form-group">
+            <label for="modalName">Your Name *</label>
+            <input type="text" id="modalName" required placeholder="e.g. David Lin">
+          </div>
+          <div class="form-group">
+            <label for="modalEmail">Corporate Email *</label>
+            <input type="email" id="modalEmail" required placeholder="david@enterprise.com">
+          </div>
+          <div class="form-group">
+            <label for="modalSubject">Platform or Domain of Interest</label>
+            <input type="text" id="modalSubject" placeholder="e.g. Aviation Dispatch Modernization">
+          </div>
+          <div class="form-group">
+            <label for="modalMessage">Project Brief *</label>
+            <textarea id="modalMessage" rows="3" required placeholder="Tell us about the project goals, tech stack preferences, or launch timeline..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <span>Submit Inquiry</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+          <div class="modal-feedback" id="modalFeedback" style="display: none;"></div>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
